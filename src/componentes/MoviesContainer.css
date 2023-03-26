@@ -1,0 +1,41 @@
+.movies-container {
+    display: flex;
+    overflow-x: scroll;
+    gap: 15px;
+}
+.movies-container img {
+    height: 30rem; 
+    border-radius: 1rem;
+    min-width: 20rem;
+    min-height: 10px;
+}
+.movie-container {
+    position: relative;
+}
+.movie-container:hover {
+    cursor:pointer;
+}
+.btnLike {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: lightpink;
+    top: 300px;
+    right: 35px;
+    border: none;
+    border-radius: 50%;
+}
+.btnLike:hover {
+    cursor: pointer;
+}
+.btnLike::before {
+    content: '🤍' ;
+}
+
+.btnLiked {
+    background-color:lightpink ;
+    box-shadow: 1px 1px 5px black;
+}
+.btnLiked::before {
+    content: '' ;
+}
